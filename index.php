@@ -1,4 +1,13 @@
-<!doctype html>
+<?php
+date_default_timezone_set('Europe/Brussels');
+
+$today = date("d/m/Y H:i:s");
+$title = 'Chocolatte('.$today.')';
+
+//single line
+/*ceci est un commentaire*/
+
+?><!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -7,7 +16,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Barista Cafe HTML CSS Template</title>
+        <!--<title><?php /*echo $title; */?></title>-->
+        <title><?=  $title ?></title>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
